@@ -1,20 +1,19 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-ZSH_DISABLE_COMPFIX="true"
 export LANG=en_US.UTF-8
 
-export VISUAL="vim"
-export EDITOR="$VISUAL"
-
 # Path to your oh-my-zsh installation.
-export ZSH="/home/swelch/.oh-my-zsh"
+username=$(whoami)
+export ZSH="/home/$username/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="oxide"
+
+ZSH_DISABLE_COMPFIX="true"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -105,13 +104,14 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
-alias c="clear"
+alias c="clear && printf '\e[3J'"
 alias cat="ccat"
 alias cdgit="cd /mnt/c/Users/Seth/git"
 alias config="vi ~/.zshrc"
-alias ls="exa -la --group-directories-first"
+alias ls="exa -laF --group-directories-first"
 alias reload="source ~/.zshrc"
 alias split="byobu"
+alias vi="vim"
 
 # byobu commands
 alias h="byobu split-window -v"
