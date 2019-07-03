@@ -25,6 +25,8 @@ set title                " change the terminal's title
 set visualbell           " don't beep
 set noerrorbells         " don't beep
 
+syntax on
+
 set mouse=a
 set expandtab    " Tabs are spaces
 colorscheme delek
