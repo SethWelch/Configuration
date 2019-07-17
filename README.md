@@ -12,7 +12,7 @@ Remove:
   - Nano
 
 Install:
-  - Byobu
+  - Tmux
   - Ccat
   - Exa
   - Oxide Theme
