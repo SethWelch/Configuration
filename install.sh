@@ -1,10 +1,6 @@
 # Remove Nano because Vim is better
 sudo apt-get remove --auto-remove nano;
 
-# Install and set Byobu to launch by default
-sudo apt-get install byobu && 
-byobu-enable --force-yes;
-
 # Install Ccat for colored cat pages
 sudo apt-get install wget --force-yes && 
 wget https://github.com/jingweno/ccat/releases/download/v1.1.0/linux-amd64-1.1.0.tar.gz &&
@@ -31,4 +27,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 # Replace the current zshrc, vimrc, and tmux.conf with the ones from the repo
 mv ~/.zshrc ~/zshrc.bak && cp .zshrc ~/;
 mv ~/.vimrc ~/vimrc.bak && cp .vimrc ~/;
-mv ~/.byobu/.tmux.conf ~/.byobu/.tmux.conf.bak && cp .tmux.conf ~/.byobu/;
+mv ~/.tmux.conf ~/.tmux.conf.bak && cp .tmux.conf ~/
