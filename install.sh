@@ -1,6 +1,10 @@
 # Remove Nano because Vim is better
 sudo apt-get remove --auto-remove nano;
 
+# Install tmux
+sudo apt-get update;
+sudo apt-get install tmux;
+
 # Install Ccat for colored cat pages
 sudo apt-get install wget --force-yes && 
 wget https://github.com/jingweno/ccat/releases/download/v1.1.0/linux-amd64-1.1.0.tar.gz &&
