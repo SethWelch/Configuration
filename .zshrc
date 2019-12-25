@@ -4,8 +4,13 @@ export LANG=en_US.UTF-8
 username=$(whoami)
 export ZSH="/home/$username/.oh-my-zsh"
 
-ZSH_THEME="oxide"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 ZSH_DISABLE_COMPFIX="true"
+
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 
 plugins=(git colored-man-pages zsh-autosuggestions zsh-syntax-highlighting)
 
