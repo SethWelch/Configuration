@@ -7,6 +7,7 @@ sudo apt install vim
 # Install tmux
 sudo apt-get update;
 sudo apt-get install tmux;
+sudo apt install zsh;
 
 # Install Ccat for colored cat pages
 sudo apt-get install wget --force-yes && 
