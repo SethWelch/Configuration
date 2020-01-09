@@ -25,3 +25,7 @@ alias log="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset 
 alias ls="exa -bhlFa --group-directories-first"
 alias reload="source ~/.zshrc"
 alias vi="vim"
+
+# tmux
+alias h='tmux split-window'
+alias v='tmux split-window -h'
